@@ -1,7 +1,9 @@
 {
     "name": "combizera/changelog",
-    "description": "A simple  generator for Laravel projects.",
+    "description": "A simple generator for Laravel projects.",
     "license": "MIT",
+    "type": "library",
+    "keywords": ["laravel", "changelog", "package"],
     "autoload": {
         "psr-4": {
             "Combizera\\Changelog\\": "src/"
@@ -14,15 +16,15 @@
         }
     ],
     "require": {
-        "php": ">= 8.2"
+        "php": "^8.2"
     },
     "require-dev": {
-        "../../../vendor/laravel/pint": "^1.22"
+        "laravel/pint": "^1.22"
     },
     "scripts": {
-        "format": "../../../vendor/bin/pint"
+        "format": "vendor/bin/pint"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true,
     "extra": {
         "laravel": {
